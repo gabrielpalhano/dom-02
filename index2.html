@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+
+    <style>
+        #area {
+            font: normal 18pt Arial;
+            height: 200px;
+            width: 200px;
+            background: blueviolet;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        #res {
+            margin-top: 20px;
+        }
+    </style> -->
+
+</head>
+<body>
+
+    <div id="area" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">Interaja</div>
+
+    <script>
+        var a = document.querySelector('div#area')
+
+            function clicou() {
+                a.innerText = 'Clicou'
+                a.style.background = 'purple'
+            }
+
+            function entrou() {
+                a.innerText = 'Entrou'
+            }
+
+            function saiu() {
+                a.innerText = 'Saiu'
+                a.style.background = 'blueviolet'
+            }
+
+
+    </script>
+
+
+   <!-- <h1>Somando valores</h1>
+
+    <input type="number" name="t1" id="t1"> +
+    <input type="number" name="t2" id="t2">
+    <input type="button" value="Somar" id="btn" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var n1 = Number(document.querySelector('input#t1').value)
+            var n2 = Number(document.querySelector('input#t2').value)
+            var res = document.querySelector('div#res')
+            var s = n1 + n2;
+            res.innerHTML = `O resultado da soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+
+    </script>  -->
+</body>
+</html>
